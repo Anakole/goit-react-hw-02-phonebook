@@ -1,3 +1,11 @@
+import { Input, Label } from 'components/ContactForm/ContactForm.styled';
+import { BsSearch } from 'react-icons/bs';
+
 export const Filter = ({ onChange, value }) => {
-  return <input type="text" value={value} onChange={onChange} />;
+  return (
+    <Label>
+      <BsSearch />
+      <Input type="text" value={value} onChange={onChange} />
+    </Label>
+  );
 };
