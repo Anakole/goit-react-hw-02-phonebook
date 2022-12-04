@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Component } from 'react';
 import { BsTelephone, BsPerson } from 'react-icons/bs';
 import { Button, Form, Input, Label } from './ContactForm.styled';
@@ -61,3 +62,7 @@ export class ContactForm extends Component {
     );
   }
 }
+
+ContactForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};
