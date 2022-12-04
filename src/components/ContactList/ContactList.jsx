@@ -18,7 +18,7 @@ export const ContactsList = ({ contacts, onDeleteContact }) => {
   );
 };
 
-ContactList.propTypes = {
+ContactsList.propTypes = {
   contacts: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,

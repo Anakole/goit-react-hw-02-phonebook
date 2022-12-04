@@ -14,7 +14,7 @@ export const ContactsItem = ({ name, number, onDelete }) => {
   );
 };
 
-ContactsItems.propTypes = {
+ContactsItem.propTypes = {
   name: PropTypes.string.isRequired,
   number: PropTypes.string.isRequired,
   onDelete: PropTypes.func.isRequired,
